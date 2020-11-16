@@ -46,14 +46,30 @@ html {
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
+p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
 a {
 	text-decoration: none;
 	color: #fff;
+	font-family: 'Roboto', sans-serif;
 	display: block;
+}
+a:hover {
+	color: #eee;
+}
+img:hover {
+	opacity: 0.8;
+}
+.d-flex {
+	display: flex;
+}
+.none {
+	display: none;
 }
 .header {
 	background: #AA0601;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 88px;
@@ -61,44 +77,212 @@ a {
 .header a .logo {
 	display: block;
 }
-.header .menu {
-	display: flex;
-}
-.header .menu li {
+.header .h-menu li {
 	margin-left: 64px;
 }
+.header .h-menu li a {
+	font-family: 'Noto Sans',serif;
+	font-size: 1rem;
+	line-height: 30px;
+}
+
+.footer {
+	background: #AA0601;
+	padding: 0 39px;
+}
+.footer .top,.footer .bottom {
+	margin: 0 auto;
+	max-width: 1110px;
+}
+.top {
+	border-bottom: #fff 1px solid;
+	flex-direction: column;
+}
+.top>div:nth-child(1) {
+	justify-content: space-between;
+	align-items: center;
+	padding: 32px 0;
+}
+.f-menu li {
+	margin-right: 48px;
+}
+.f-menu li:last-child {
+	margin-right: 0;
+}
+.f-menu li a {
+	font-family: 'Noto Sans',serif;
+	font-size: 0.8rem;
+	line-height: 24px;
+}
+.social li {
+	margin-left: 32px;
+}
+.social li:first-child {
+	margin-left: 0;
+}
+.social li img {
+	width: 48px;
+}
+.phone,.email {
+	align-items: center;
+	margin-bottom: 24px;
+}
+.phone img {
+	width: 38px;
+	margin-right: 20px;
+}
+.email img {
+	width: 44px;
+	margin-right: 14px;
+}
+.phone a,.email a {
+	font-size: 1.8rem;
+	line-height: 54px;
+}
+.bottom {
+	padding: 24px 0;
+	justify-content: space-between;
+	align-items: center;
+}
+.copyright {
+	align-items: center;
+}
+.copyright img {
+	margin-right: 38px;
+}
+.copyright p {
+	font-size: 0.8rem;
+	line-height: 24px;
+}
+.extra_link ul li:last-child {
+	margin-left: 62px;
+}
+.extra_link ul li a {
+	font-family: 'Noto Sans',serif;
+	font-size: 0.7rem;
+	line-height: 21px;
+}
+
 @media screen and (max-width: 815px) {
+	.none-md {
+		display: none;
+	}
 	.header {
 		padding: 30px 39px;
 	}
-	.header .menu li {
+	.header .h-menu li {
 		margin-left: 40px;
 	}
+	.f-menu li {
+		margin-right: 40px;
+	}
+	.social li {
+		margin-left: 24px;
+	}
+	.social li img {
+		width: 24px;
+	}
+	.phone img {
+		width: 18px;
+		margin-right: 15px;
+	}
+	.email img {
+		width: 18px;
+		margin-right: 10px;
+	}
+	.phone a,.email a {
+		font-size: 1rem;
+		line-height: 30px;
+	}
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
+	.none-sm {
+		display: none;
+	}
+	.block-sm {
+		display: block;
+	}
 	.header {
-		background: #AA0601;
-		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
 		padding: 0;
 	}
 	.header a .logo {
 		width: 48px;
 		margin: 10px 0;
 	}
-	.header .menu {
+	.header .h-menu {
 		flex-wrap: wrap;
 		text-align: center;
 		width: 100vw;
 	}
-	.header .menu li {
+	.header .h-menu li {
 		width: calc(50vw - 2px);
 		margin-left: 0;
 		border: 1px solid #fff;
 	}
-	.header .menu li a {
+	.header .h-menu li a {
+		color: #fff;
 		padding: 8px 0;
+	}
+	.header .h-menu li a:active  {
+		color: #AA0601;
+	}
+	.header .h-menu li:active {
+		background: #fff;
+	}
+	.top {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 24px 0;
+	}
+	.top>div:nth-child(1) {
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+	.phone {
+		margin-bottom: 7px;
+	}
+	.email {
+		margin-bottom: 0;
+	}
+	.phone img {
+		width: 14px;
+		margin-right: 7px;
+	}
+	.email img {
+		width: 16px;
+		margin-right: 7px;
+	}
+	.phone a,.email a {
+		font-size: 0.8rem;
+	}
+	.bottom {
+		padding: 24px 0;
+		justify-content: space-between;
+		align-items: initial;
+		flex-direction: column;
+	}
+	.copyright p {
+		font-size: 0.7rem;
+		line-height: 21px;
+	}
+	.extra_link {
+		justify-content: space-between;
+		align-items: center;
+	}
+	.extra_link ul {
+		flex-direction: column;
+	}
+	.extra_link ul li:last-child {
+		margin-left: 0;
+	}
+	.extra_link ul li {
+		margin-top: 7px;
+	}
+	.extra_link img {
+		margin-top: 7px;
+		width: 46px;
 	}
 }
