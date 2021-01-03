@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------------------*/
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container h2 {
+    font-size: 32px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 16px;
+    line-height: 45px;
+}
+.container h2 span {
+    font-size: 24px;
+    margin-left: 16px;
+}
+.container .line-dark {
+    border-bottom: 1px solid #000000;
+}
+.container .line-light {
+    border-bottom: 1px solid #ffffff;
+}
+.container .title-red {
+    color: #A00404;
+}
+.container .title-white {
+    color: #ffffff;
+}
+.container .li-mb1 li {
+    margin-bottom: 24px;
+}
+.container .li-mb1 li:last-child {
+    margin-bottom: 0px;
+}
+.container li {
+    font-size: 24px;
+}
+.container img {
+    padding: 8px 0px;
+}
+
+.profile {
+    margin-bottom: 72px;
+}
+.profile h1 {
+    font-size: 80px;
+    line-height: 94px;
+    margin-top: 30px;
+    padding: 17px 0px;
+}
+.profile .headshot img {
+    display: block;
+    padding: 48px 0px;
+}
+.profile li {
+    line-height: 36px;
+}
+
+.education {
+    margin-bottom: 72px;
+}
+.education li {
+    line-height: 34px;
+}
+
+.experience {
+    margin-bottom: 72px;
+}
+.experience .work-list {
+    padding-left: 24px;
+    border-left: 1px solid #96A9C4;
+    margin-left: 24px;
+}
+.experience .work-list li h3 {
+    line-height: 34px;
+}
+.experience .work-list li img {
+    width: 90px;
+    height: 90px;
+}
+.experience .work-list li p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.experience .work-list li .state1 {
+    width: 53.5%;
+    line-height: 30.8px;
+}
+
+.skill, .contact {
+    background: #415165;
+    padding-bottom: 36px;
+}
+.skill h2, .contact h2 {
+    text-align: center;
+    padding-top: 24px;
+}
+.skill ul, .contact ul {
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.skill {
+    margin-bottom: 72px;
+}
+.skill h2 {
+    margin-bottom: 40px;
+}
+.skill .skill-list {
+    width: 200px;
+    padding-left: 24px;
+    border-left: 1px solid #96A9C4;
+}
+.skill .skill-list li {
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.skill .skill-list li:last-child {
+    margin-bottom: 0px;
+}
+
+.contact h2 {
+    margin-bottom: 32px;
+}
+.contact ul {
+    text-align: center;
+}
+.contact ul li {
+    line-height: 33px;
+    margin-bottom: 16px;
+}
+.contact ul li:last-child {
+    margin-bottom: 0px;
+}
+.contact ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all .5s;
+}
+.contact ul li a:hover {
+    color: #b9c2ce;
+}
+.contact ul li .media {
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact ul li .media li {
+    font-size: 48px;
+    margin: 0px 12px;
+}
